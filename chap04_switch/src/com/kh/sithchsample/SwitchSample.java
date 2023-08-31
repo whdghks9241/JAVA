@@ -66,8 +66,5 @@ public class SwitchSample {
 				System.out.println("잘못된 주문입니다. 다시 주문해주세요.");
 				break;
 		}
-		
-		
-		
 	}
 }

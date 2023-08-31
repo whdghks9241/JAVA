@@ -152,9 +152,7 @@ public class practice {
 			System.out.println("평균 : " + averageScore);
 			System.out.println("축하합니다, 합격입니다!");
 			
-		}
-		
-		
+		}		
 	}
 	
 	

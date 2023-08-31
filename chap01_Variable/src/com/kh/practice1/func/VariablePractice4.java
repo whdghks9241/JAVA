@@ -15,8 +15,8 @@ public class VariablePractice4 {
 		eString = sc.next();
 		
 		System.out.println("문자열의 첫 단어는 " + eString.charAt(0)  + " 입니다");
-		System.out.println("문자열의 첫 단어는 " + eString.charAt(1)  + " 입니다");
-		System.out.println("문자열의 첫 단어는 " + eString.charAt(2)  + " 입니다");
+		System.out.println("문자열의 두번째 단어는 " + eString.charAt(1)  + " 입니다");
+		System.out.println("문자열의 세번째 단어는 " + eString.charAt(2)  + " 입니다");
 
 		
 		// 2번
@@ -27,6 +27,5 @@ public class VariablePractice4 {
 		System.out.println("문자열의 두번째 단어는 " + eString.substring(1,2) + " 입니다");
 		System.out.println("문자열의 세번째 단어는 " + eString.substring(2,3) + " 입니다");
 		
-
 	}
 }
