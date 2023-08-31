@@ -12,22 +12,35 @@ public class Pracitce16 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("숫자를 입력해주세요");
+		
 		int num = sc.nextInt();
-		int num2= 0;
+		int num2= 1;
+		
+		// 소수인지 아닌지 체크하는 boolean 
+		boolean primeNum=true;
+		 
 		if (num < 2) {
 			System.out.println("잘못 입력하셨습니다.");
 		} else {
 			// 소수의 경우 1과 자기자신말고는 나누어 떨어지는 수가 없어야한다.
-			for (int i = 1; i <= num; i++) {
-				if ((num % i) == 0) {
-					 num2 += 1;
-				}
-			}
-			if (num2 >= 3) {
-				System.out.println("소수가 아닙니다");
-			} else {
-				System.out.println("소수입니다");
-			}
+			for(int i=2; i<=num; i++) {
+	            for(int j=2;j*j<=i;j++){
+	                if(i%j==0){
+	                    // 소수가 아닐
+	                	primeNum=false;
+	                    // 소수가 아닌 갯수
+	                    num2++;
+	                    break;
+	                }
+	            }
+	           
+	            if(primeNum){
+	                // 소수 일때만 값을 출력
+	                System.out.print(i+" ");
+	            }
+	        }
+
+            System.out.print("소수 총 갯수 : " + (num - num2));
 		}
 	}
 }
