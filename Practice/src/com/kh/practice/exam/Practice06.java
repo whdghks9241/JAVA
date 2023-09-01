@@ -2,7 +2,7 @@ package com.kh.practice.exam;
 
 import java.util.Scanner;
 
-public class Pracitce11 {
+public class Practice06 {
 	public static void main(String[] args) {
 
 		/**

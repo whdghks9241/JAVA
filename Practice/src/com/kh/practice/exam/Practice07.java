@@ -2,7 +2,7 @@ package com.kh.practice.exam;
 
 import java.util.Scanner;
 
-public class Pracitce12 {
+public class Practice07 {
 	public static void main(String[] args) {
 		/**
 		 * 사용자로부터 입력 받은 숫자의 단을 출력하세요.

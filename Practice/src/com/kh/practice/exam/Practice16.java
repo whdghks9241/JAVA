@@ -2,7 +2,7 @@ package com.kh.practice.exam;
 
 import java.util.Scanner;
 
-public class Practice21 {
+public class Practice16 {
 	public static void main(String[] args) {
 		/**
 		 * 다음과 같은 실행 예제를 구현하세요.

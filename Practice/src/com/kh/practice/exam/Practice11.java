@@ -2,7 +2,7 @@ package com.kh.practice.exam;
 
 import java.util.Scanner;
 
-public class Pracitce16 {
+public class Practice11 {
 	public static void main(String[] args) {
 		
 		/**
@@ -17,27 +17,27 @@ public class Pracitce16 {
 		int num2= 1;
 		
 		// 소수인지 아닌지 체크하는 boolean 
-		boolean primeNum=true;
+		boolean primeNum = true;
 		 
 		if (num < 2) {
 			System.out.println("잘못 입력하셨습니다.");
 		} else {
 			// 소수의 경우 1과 자기자신말고는 나누어 떨어지는 수가 없어야한다.
-			for(int i=2; i<=num; i++) {
-	            for(int j=2;j*j<=i;j++){
-	                if(i%j==0){
+			for(int i=2; i <= num; i++) {
+	            for(int j=2; j*j <= i; j++){
+	                if(i % j == 0){
 	                    // 소수가 아닐
-	                	primeNum=false;
+	                	primeNum = false;
 	                    // 소수가 아닌 갯수
 	                    num2++;
 	                    break;
 	                }
 	            }
-	           
 	            if(primeNum){
 	                // 소수 일때만 값을 출력
 	                System.out.print(i+" ");
 	            }
+	            primeNum = true;
 	        }
 
             System.out.print("소수 총 갯수 : " + (num - num2));
