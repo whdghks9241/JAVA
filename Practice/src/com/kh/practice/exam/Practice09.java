@@ -13,15 +13,19 @@ public class Practice09 {
 		   소수’는 n을 1부터 n까지로 나누었을 때 나누어 떨어지는 수가 1과 n뿐인 수를 말한다.
 		 */
 		
-		Scanner sc = new Scanner(System.in);
-		// 소수인지 아닌지 체크하는 boolean 
-	
-		System.out.println("숫자를 입력해주세요");
+		// 입력받기 위해 불러오는 메소드
+		Scanner sc = new Scanner(System.in); 
+		// 출력 메소드
+		System.out.println("숫자를 입력해주세요"); 
+		
 		int num = sc.nextInt();
 		int num2= 0;
-		if (num < 2) {
+		
+		// 만약 입력한수가 2보다 작을 경우
+		if (num < 2) { 
 			System.out.println("잘못 입력하셨습니다.");
-		} else {
+		// 만약 입력한수가 2보다 클 경우
+		} else { 
 			// 소수의 경우 1과 자기자신말고는 나누어 떨어지는 수가 없어야한다. -> 나머지가 0인 횟수가 2회.
 			for (int i = 1; i <= num; i++) {
 				// 입력한 숫자의 나머지값이 0일경우 

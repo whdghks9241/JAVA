@@ -1,5 +1,6 @@
 package com.kh.practice.exam;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Practice21 {
@@ -21,14 +22,15 @@ public class Practice21 {
 		
 		String[] menu = {"후라이드","양념","간장","파닭","어니언"};
 			String strMenu;
+		
 		boolean unHave = false;
 		
 		for (int i = 0; i < menu.length; i++)  {
+			System.out.println(menu[i]);
 			
-			if (menu[i] == choiceMenu) {
-		
+			if (choiceMenu.equals(menu[i])) {
 				unHave = true;
-			} 
+			}
 		}
 		System.out.println(unHave);
 		
