@@ -18,9 +18,6 @@ public class Lotto {
 
 	Random rd = new Random();
 	
-	int lottoNum , checkNum;
-	
-	
 	public Lotto() {
 
 	}
