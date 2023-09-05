@@ -1,5 +1,6 @@
 package com.kh.example.practice5.model.vo;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Lotto {
@@ -36,57 +37,15 @@ public class Lotto {
 			// array안에 중복된 데이터가 있는지 체크
 			for (int j = 0; j < i; j++) {
 
-				if (arrayLotto[j] == arrayLotto[i]) {
-					System.out.println("중복");
-					j--;
+				if (arrayLotto[i] == arrayLotto[j]) {
+					i--;
+					break;
+		
 				}
 			}
-			lottoNum = arrayLotto[i];
-			System.out.println(" " + lottoNum);
 		}
 		
-//		for(int i = 0; i < arrayLotto.length; i++) {
-//			
-//			lottoNum = rd.nextInt(45)+1;
-//			
-//			// while문은 false 일경우 종료된다.
-//			while(!numCheck) {
-//				
-//				for (int j = 0; j <= i; j++) {
-//				
-//					if (arrayLotto[j] == lottoNum) {
-//						
-//
-//						System.out.println(lottoNum);
-//						
-//						
-//						numCheck = true;
-//						
-//					}
-//				}	
-//				break;
-////					// 만약 array안에 있는 숫자와 랜덤으로 돌아간 숫자가 동일한지 체크
-////					if (arrayLotto[j] == lottoNum) {
-////						
-////						// 번호가 똑같을경우 번호체크 boolean값을 바꾼다
-////						numCheck = true;
-////						return;
-////					}
-////
-////				}
-//			}
-////
-//			if (numCheck == false) {
-//				arrayLotto[i] = lottoNum;
-//
-//			}
-//			numCheck = false;
-////			
-////		
-////			
-//			System.out.println(" 		" + lottoNum);
-//		}
-		
+		System.out.print(Arrays.toString(arrayLotto));
 		
 	}
 }

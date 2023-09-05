@@ -14,10 +14,16 @@ public class Practice22 {
 		String jumin = "123456-1234567";
 		
 		// 2. 성별자리 이후 별표 만드는거 만들기
-		String makester = "*";
+		char makester = '*';
 		
 		// 주민등록번호 성별자리 이후부터 *로 가리고 출력
 		// to char Array를 사용해서 String -> char Array로 
 		char[] juminStar = jumin.toCharArray();
+		
+		for (int i = 8; i < juminStar.length; i++) {
+			juminStar[i] = makester;
+		}
+		
+		System.out.println(juminStar);
 	}
 }
