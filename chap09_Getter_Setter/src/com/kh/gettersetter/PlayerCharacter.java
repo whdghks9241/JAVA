@@ -37,11 +37,7 @@ public class PlayerCharacter {
 	}
 
 	public void setHealth(int health) {
-		if (health > 0) {
-			this.health = health;;
-		} else {
-			System.out.println("체력이 없습니다.");
-		}
+		isValidHealth();
 	}
 
 	public void setAttackpower(int attackpower) {
@@ -52,6 +48,12 @@ public class PlayerCharacter {
 			this.attackpower = 0;
 		}
 		
+	}
+	
+	public void isValidHealth() {
+		if (health <= 0) {
+			health = 0;
+		}
 	}
 	
 	// 캐릭터 정보 출력
