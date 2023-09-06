@@ -7,7 +7,6 @@ public class GameRun {
 		// 플레이 생성자 만들기
 		GoodPlayer player1 = new GoodPlayer();
 
-
 		player1.setName("Marin");
 		
 		player1.setHealth(-10);
@@ -27,7 +26,6 @@ public class GameRun {
 
 		player2.setName("aomrom2");
 
-		player2.setName(null);
 		// -10 이 무결성(내가만든코드가 결장이 엇는지 인지 검증한
 
 		player1.setAttackpower(20);
