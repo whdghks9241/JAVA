@@ -11,7 +11,7 @@ public class GoodPlayer {
 	}
 
 	public void ValidName(String name) {
-		if (this.name == "") {
+		if (this.name == " ") {
 			this.name = name;
 		}
 	}

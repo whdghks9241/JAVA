@@ -27,10 +27,9 @@ public class GameRun {
 		player2.setName("aomrom2");
 
 		// -10 이 무결성(내가만든코드가 결장이 엇는지 인지 검증한
-
-		player1.setAttackpower(20);
-		player1.ValidattackPower();;
-		player1.displayInfo();
+		player2.setAttackpower(20);
+		player2.ValidattackPower();;
+		player2.displayInfo();
 		
 	}
 
