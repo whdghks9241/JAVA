@@ -2,7 +2,7 @@ package com.kh.inheriance.calculator;
 
 import java.util.Scanner;
 
-public class CalculatorRun extends Calculator{
+public class CalculatorRun extends CalculatorFORMod {
 
 	public static void main(String[] args) {
 
@@ -15,16 +15,21 @@ public class CalculatorRun extends Calculator{
 		System.out.println("두 번째 숫자를 입력해주세요");
 		int secondInput = sc.nextInt();
 
-		Calculator cal = new Calculator();
-		int result1 =  cal.add();
-		int result2 =  cal.substruct();
-		int result3 =  cal.multiply();
-		int result4 =  cal.divide();
+		CalculatorFORMod cal = new CalculatorFORMod();
+		cal.num1 = firstInput;
+		cal.num2 = secondInput;
 
-		System.out.println("Add : " + result1);
-		System.out.println("substruct : " + result2);
-		System.out.println("multiply : " + result3);
-		System.out.println("divide : " + result4);
+		int result = cal.add();
+		int result1 = cal.substruct();
+		int result2 = cal.multiply();
+		int result3 = cal.divide();
+		int result4 = cal.mod(cal.num1, cal.num2);
+
+		System.out.println("Add : " + result);
+		System.out.println("substruct : " + result1);
+		System.out.println("multiply : " + result2);
+		System.out.println("divide : " + result3);
+		System.out.println("mod : " + result4);
 	}
 
 }

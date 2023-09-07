@@ -6,7 +6,7 @@ public class Calculator {
 	// 계산기
 	// 1. 더하기
 	// 파라미터 = 매개변수 2개
-	public int add() {
+	public int add() { // 파라미텅
 		return num1 + num2;
 	}
 	
@@ -22,9 +22,8 @@ public class Calculator {
 	
 	// 4. 나누기
 	public int divide() {
+
 		return num1 / num2;
 	}
-	
-
 
 }
