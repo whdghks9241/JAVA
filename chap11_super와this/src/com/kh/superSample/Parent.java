@@ -10,12 +10,15 @@ package com.kh.superSample;
 public class Parent {
 	
 	String name;
+	int age;
 	
 	Parent() {
 		System.out.println("부모 클래스의 기본 생성자입니다.");
 	}
 	
 	Parent(String name) {
+		// this 라는 이름을 사용에서 인스턴수 변수에 앖을 대입+
+		
 		this.name = name;
 		System.out.println("부모 클래스의 문자열 파라미터 생성자 입니다! 이름 : " + name);
 		System.out.println(" 이름 " + name);
