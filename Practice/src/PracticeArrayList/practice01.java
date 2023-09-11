@@ -14,7 +14,7 @@ public class practice01 {
 		최후 출력 -> 빨 파 보
  */
 	public static void main(String[] args) {
-		
+	
 		ArrayList<String> colorList = new ArrayList<String>(Arrays.asList("빨강색", "주황색", "노랑색", "초록색", "파랑색", "남색", "보라색"));
 		
 		System.out.println("colorList : " + colorList);
@@ -34,5 +34,4 @@ public class practice01 {
 			}
 		}
 	}
-
 }
