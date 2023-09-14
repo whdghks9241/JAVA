@@ -9,7 +9,7 @@ public class Person {
 	private double height;
 	
 	private double weight;
-
+	
 	public Person() {
 		
 	}
@@ -52,7 +52,5 @@ public class Person {
 	public void setWeight(double weight) {
 		this.weight = weight;
 	}
-	
-	
 }	
 
