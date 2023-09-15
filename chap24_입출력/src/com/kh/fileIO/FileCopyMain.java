@@ -11,7 +11,15 @@ public class FileCopyMain {
 		// TODO Auto-generated method stub
 		String inputFile = "C:\\Users\\user1\\Downloads\\cat.png";
 		String outputFile = "C:\\Users\\user1\\Downloads\\cuteCat.jpg";
-		
+		/*
+		 try(resource) 와 try{} 차이점
+		 try(resource) 문법은 자동 자원 관리 문법으로 코드가 블록을 빠져 나갈 때 자원을 자동으로 닫을 수 있음
+		 				현재는 File~~~Stream 들을 자동으로 닫겠다 선언한 것
+		 try{...}      문법은 자원을 수동으로 닫아 예외처리를 진행해야함
+		 
+		 try(FileInputStream fis = new FileInputStream(inputFile);
+			FileOutputStream fos = new FileOutputStream(outputFile))
+		 */
 		try 
 			(FileInputStream fis = new FileInputStream(inputFile);
 			FileOutputStream fos = new FileOutputStream(outputFile)) {
