@@ -6,7 +6,7 @@ public class GraphMain {
 
 		int ver = 6;
 		
-		Graph graph = new Graph(ver);
+		DFSGraph graph = new DFSGraph(ver);
 		
 		graph.addEdge(0, 1); // 노드 0에서 노드 1로 방향이 있는 엣지를 추가
 		graph.addEdge(0, 2); // 노드 0에서 노드 2로 방향이 있는 엣지를 추가
@@ -22,7 +22,7 @@ public class GraphMain {
 	}
 
 }
-
+ 
 /**
  DFS 탐색을 시작하여 그 결과를 출력
  탐색결과는 시작 노드에서 출발하여 깊이 우선으로 탐색 후 노드를 방문한 순서대로 출력

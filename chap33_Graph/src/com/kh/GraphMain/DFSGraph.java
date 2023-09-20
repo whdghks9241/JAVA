@@ -5,8 +5,8 @@ import java.util.LinkedList;
 /*
  * Graph class : 인접리스트를 사용해서 노드와 간선을 저장
  */
-public class Graph {
-
+public class DFSGraph {
+ 
 	// 그래프의 노드수
 	private int V; 
 	// 인접배열리스트
@@ -22,7 +22,7 @@ public class Graph {
 	 	그래프 크기(노드 수)를 받아와서 그래프를 초기화한다
 	 	adjList 배열의 각 원소를 빈 LinkedList로 초기화
 	 */
-	public Graph(int ver) {
+	public DFSGraph(int ver) {
 		V = ver;
 		adjList = new LinkedList[ver];
 		
