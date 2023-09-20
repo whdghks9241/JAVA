@@ -37,12 +37,11 @@ public class BinaryTree {
 		
 		if (data < root.data) {
 			root.left = insertRec(root.left, data);
-			System.out.println("왼쪽! : " + root.left.data);
+			System.out.println("왼쪽값 : " + root.left.data);
 		} else if (data > root.data) {
 			root.right = insertRec(root.right, data);
-			System.out.println("오른쪽! : " + root.right.data);
+			System.out.println("오른쪽값 : " + root.right.data);
 		}
-		
 		return root;
 	}
 
@@ -60,8 +59,8 @@ public class BinaryTree {
 		if (root != null) {
 			inOrderTR(root.left);
 			inOrderTR(root.right);
-
-//			System.out.println(" root.data : " + root.data + " ");
+		} else if (root == null){
+			 root = null;
 		}
 	}
 	
@@ -70,34 +69,22 @@ public class BinaryTree {
 		
 		BinaryTree tree = new BinaryTree();
 
-		tree.insert(400);
-		tree.insert(200);
-		tree.insert(220);
-		tree.insert(230);
-		tree.insert(240);
-		tree.insert(250);
-		tree.insert(260);
-		tree.insert(270);
-		tree.insert(280);
-		tree.insert(290);
-		tree.insert(300);
-		tree.insert(50);
-		tree.insert(40);
 		tree.insert(10);
-		tree.insert(100);
-		tree.insert(90);
+		
+		
+		tree.insert(40);
 		tree.insert(80);
-		tree.insert(30);
-		tree.insert(70);
-		tree.insert(150);
 		tree.insert(60);
-		tree.insert(120);
-		tree.insert(130);
-		tree.insert(140);
-		tree.insert(150);
-		tree.insert(160);
-		tree.insert(170);
-		tree.insert(180);
+		tree.insert(70);
+		tree.insert(90);
+		tree.insert(50);
+		
+		
+		tree.insert(36);
+		
+		
+		tree.insert(30);
+		tree.insert(20);
 		
 		System.out.println("이진 트리의 중위순회 결과 : ");
 		tree.inOrderT();
